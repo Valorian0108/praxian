@@ -1,0 +1,15 @@
+# Secrets never enter this repository, by rule and by belt-and-braces.
+wallet.json
+.env
+.env.*
+*.key
+*.pem
+*secret*
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node artifacts, if anyone runs tooling inside the clone
+node_modules/
