@@ -208,6 +208,11 @@ OPEN ON RESUME, in suggested order (updated 2026-11-26):
 4. Escrow-drain drill LAST (withdraw, observe, then re-fund).
 5. Decisions parked with user: LICENSE (MIT recommended), SPEC amendment #2
    (drift-aware price scoring), Rule 10 amendment scope.
+6. Contract amendment candidate #3 (from Drill B2 finding, 2026-11-26): add a
+   degraded-purchase clause, disclosing as degraded any purchase whose
+   resolved intent differs from what the question needed or whose required
+   fields come back missing, quoting the network warning. Awaits user
+   approval alongside amendment #2.
 
 DONE 2026-11-26 WHILE PARKED: README BREAK overclaim reworded to honest
 per-item test statuses; README restyled to flowing prose with no em dashes;
