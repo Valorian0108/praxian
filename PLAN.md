@@ -1,10 +1,15 @@
 # PROJECT PLAN — "Truth Agent" (working title, rename pending)
 
 **Status:** APPROVED by user 2026-11-25 ("ok approve an log it") — see APPROVAL-LOG.md entry #2.
-**Current phase:** PHASE 4 — Hardening & Stranger Test — **PARKED 2026-11-25**
-by user request ("park this project"). Phases 0–3 complete; Phase 4 Job 1
-done (README + verify/check.js at c778727). Resume point and open items:
-PARKING NOTE at the bottom of this file and APPROVAL-LOG entry #8.
+**Current phase:** COMPLETE as of 2026-11-27, maintenance mode. Phases 0-4
+all closed: spec, reality check, live agent, gate demo, A/B experiment with
+honest results, stranger manual, all four failure drills tested across two
+bodies (Cherry Studio and an OpenCode clone of the public repo), stranger
+certification passed, license MIT, amendments and manual fixes applied.
+Queue empty per APPROVAL-LOG entry #14. Remaining items live outside this
+plan: the F-ESCROW-1 disclosure send and the live-agent contract paste are
+the owner's hands; the Praxis showroom is a separate future project.
+Everything below is kept as the historical record.
 **Pace:** own-pace, no deadlines. Roughly one phase per session.
 
 ## What this project is
@@ -183,7 +188,7 @@ Gate: explicit user pick, or deliberate "none for now". → logged.
 - Rule 10 amendment ("log lessons only when user says 'log this'") — proposed,
   user has not answered. LESSONS.md logging paused until decided.
 
-## PARKING NOTE (2026-11-25)
+## PARKING NOTE (2026-11-25, SUPERSEDED 2026-11-27: unparked, Phase 4 completed, queue emptied; kept as history)
 
 Parked by user at Phase 4, mid-Job-2. State at parking:
 
