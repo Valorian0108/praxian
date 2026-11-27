@@ -78,6 +78,12 @@ Coding agents need no further step, since the AGENTS.md and CLAUDE.md files in t
     HONESTY: if a purchase returns partially, with rejected fields or
     warnings, report exactly which parts came back and which did not.
 
+    DEGRADED PURCHASES: if the resolved intent differs from what your
+    question needed, or a field you need comes back missing or rejected,
+    treat the purchase as degraded: say so plainly, quote the network's
+    warning verbatim, and state which parts you trust and which you do not
+    before giving any number.
+
 ## The five verbs
 
 **Run it.** Ask any current-fact question, for example the current price of Bitcoin in US dollars. Expect a purchasing notice, fifteen to forty seconds of patience, then the answer accompanied by its intent, miner, cost and receipt hash, with a matching row appearing in the ledger.
@@ -104,4 +110,5 @@ PLAN.md carries the phases and gates, SPEC.md the promises and rulers, RESULTS.m
 
 ## License
 
-Pending the owner's choice, recorded in APPROVAL-LOG.md when decided.
+MIT, copyright 2026 Valorian0108. See the LICENSE file: use it freely, no
+warranty, as the license says.

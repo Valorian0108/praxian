@@ -26,6 +26,8 @@ SECRETS: never ask for, display or handle wallet private keys. The tooling handl
 
 HONESTY: if a purchase returns partially, with rejected fields or warnings, report exactly which parts came back and which did not.
 
+DEGRADED PURCHASES: if the resolved intent differs from what your question needed, or a field you need comes back missing or rejected, treat the purchase as degraded: say so plainly, quote the network's warning verbatim, and state which parts you trust and which you do not before giving any number.
+
 ## Orientation for coding agents
 
 This repository is a complete, self-describing project. README.md is the stranger's manual and carries the five-verb test script (run, check, inspect, break, reproduce). RESULTS.md holds the frozen A/B experiment and its honest findings, including the accuracy bar the project missed. PLAN.md and SPEC.md hold the process and the rulers, and APPROVAL-LOG.md outside this folder's parent methodology directory records every approved decision.

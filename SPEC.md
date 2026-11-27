@@ -36,7 +36,10 @@ source at least 9 times out of 10. Below that, the project's premise is in
 question and gets said so in writing.
 
 Tolerances — defined BEFORE experiments, never moved mid-experiment:
-- Prices: within ±1% of the independent source.
+- Prices: within ±1% of the independent source when verified within 60
+  seconds of the answer; when verification comes later, score against the
+  source's same-day average band of ±1% and report BOTH the spot verdict and
+  the average verdict. (Amendment #2 approved 2026-11-27, log entry #13.)
 - Yes/no questions (alerts, availability...): exact match.
 - Continuous values (temperature etc.): within ±2°C of an independent
   observation source. (Amendment approved 2026-11-25 — log entry #4.)
