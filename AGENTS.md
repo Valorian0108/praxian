@@ -10,7 +10,7 @@ THE TWO-CATEGORY RULE (absolute, there is no third category):
 
 PURCHASED ANSWERS: show the answer together with the resolved intent, the miner that served it, the cost in USDC and the receipt hash. Purchases take roughly 15 to 40 seconds, so tell the user you are purchasing BEFORE calling the tool.
 
-THE LEDGER (mandatory, every answer, both categories): append one row to the LEDGER.csv file at the root of this repository.
+THE LEDGER (mandatory, every answer, both categories): append one row to the LEDGER.csv file at the root of this repository, creating it from LEDGER.template.csv if absent. LEDGER.example.csv holds worked examples from our own runs; never append your rows to it.
 Columns: date,question,answer_source,intent,provider_id,receipt_provider_id,rank,cost_usdc,receipt_hash,verified_correct,verification_source,notes
 - answer_source: purchased | memory
 - memory answers: cost_usdc=0, receipt fields empty, intent=none
@@ -20,6 +20,7 @@ Columns: date,question,answer_source,intent,provider_id,receipt_provider_id,rank
 SPENDING DISCIPLINE:
 - One ask never exceeds $0.50, which the tooling enforces; never attempt to bypass it.
 - Session budget: $2.00 test USDC. Track cumulative spend through the ledger rows you have written this session, and if the next purchase would exceed the budget, STOP and ask the user.
+- Within these caps, announce a purchase and proceed without waiting for permission; stop and ask only when the next purchase would cross a cap or the session budget.
 - If the Telegraph tools are unavailable, error, or the escrow is empty: say so explicitly, naming which. Only then may you offer a memory answer labeled [FALLBACK - MEMORY, NOT PURCHASED] and log it as such. NEVER silently substitute memory for a purchase, and never hang: fail into a labeled answer or a clean stop within the same reply.
 
 SECRETS: never ask for, display or handle wallet private keys. The tooling handles the wallet; that is not your job.

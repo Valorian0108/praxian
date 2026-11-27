@@ -28,7 +28,7 @@ Now attach the telegraph MCP server to your agent, and this is the one step that
 
 One rule governs every host: start a fresh session after attaching, because sessions snapshot their tool list at birth and never see servers attached later.
 
-Coding agents need no further step, since the AGENTS.md and CLAUDE.md files in this repository install the contract the moment the folder opens. Chat hosts need the contract pasted once, and it is printed in full below. For the ledger, coding agents write to the LEDGER.csv file at the root of the clone exactly as the contract states, while chat hosts substitute their own absolute path for `<YOUR_LEDGER_PATH>`.
+Coding agents need no further step, since the AGENTS.md and CLAUDE.md files in this repository install the contract the moment the folder opens. Chat hosts need the contract pasted once, and it is printed in full below. For the ledger, coding agents write to the LEDGER.csv file at the root of the clone exactly as the contract states, creating it from the blank LEDGER.template.csv if absent, while chat hosts substitute their own absolute path for `<YOUR_LEDGER_PATH>`. Our own worked history ships separately as LEDGER.example.csv; never append fresh rows to the example file, and note that LEDGER.csv is git-ignored so every adopter's book stays local.
 
 ## The contract, verbatim
 
@@ -66,6 +66,9 @@ Coding agents need no further step, since the AGENTS.md and CLAUDE.md files in t
     - Session budget: $2.00 test USDC. Track cumulative spend through the
       ledger rows you have written this session, and if the next purchase
       would exceed the budget, STOP and ask the user.
+    - Within these caps, announce a purchase and proceed without waiting
+      for permission; stop and ask only when the next purchase would cross
+      a cap or the session budget.
     - If the Telegraph tools are unavailable, error, or the escrow is empty:
       say so explicitly, naming which. Only then may you offer a memory
       answer labeled [FALLBACK - MEMORY, NOT PURCHASED] and log it as such.
@@ -106,7 +109,7 @@ Purchased answers can still be stale, either because a miner served old data or 
 
 ## Files in this repository
 
-PLAN.md carries the phases and gates, SPEC.md the promises and rulers, RESULTS.md the experiment and its findings, REALITY-REPORT.md the supply research and field notes, LEDGER.csv the schema plus our own rows as worked examples, the questions folder the frozen A/B set and the gate demo, verify/check.js the independent checker, and AGENTS.md plus CLAUDE.md the auto-loading contract for coding agents.
+PLAN.md carries the phases and gates, SPEC.md the promises and rulers, RESULTS.md the experiment and its findings, REALITY-REPORT.md the supply research and field notes, LEDGER.template.csv the blank schema and LEDGER.example.csv our own worked history, the questions folder the frozen A/B set and the gate demo, verify/check.js the independent checker, and AGENTS.md plus CLAUDE.md the auto-loading contract for coding agents.
 
 ## License
 

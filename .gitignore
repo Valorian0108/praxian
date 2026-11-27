@@ -13,3 +13,4 @@ desktop.ini
 
 # Node artifacts, if anyone runs tooling inside the clone
 node_modules/
+LEDGER.csv
